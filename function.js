@@ -48,8 +48,8 @@ function stringCapitalize(str) {
 	// looping through each index in strarr and capping first letter 
 	for(var i=0; i < strarr.length; i++) {
 		upper += strarr[i].replace(strarr[i].charAt(0), strarr[i].charAt(0).toUpperCase());
-		if ((i + 1) !== strarr.length ) {
-			upper += ' '; 
+		if ((i + 1) !== strarr.length) {
+			upper += ' ';
 		}
 	}
 	return upper;
