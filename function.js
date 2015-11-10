@@ -72,6 +72,7 @@ function evenNumbers(num) {
 }
 
 console.log(evenNumbers(20));
+
 // -Define a function called isDivisible that takes two arguments and returns a boolean. 
 // Return true if the first argument is divisible by the second; otherwise, return false.
 function isDivisible(a, b) {
@@ -83,6 +84,25 @@ function isDivisible(a, b) {
 }
 
 console.log(isDivisible(5, 10));
+
 // -Bonus: Write a function called oddNumbers that takes a random integer, 
 // from 0 to 100. If the number is greater than 40 then output all the odd integers from 40 to the random number. 
 // If the number is less than 40, output all the odd integers from 0 to 40.
+
+function oddNumbers(random) {
+	 var over40 = [];
+	if(random > 40) {
+		for (var i=41; i < random; i += 2) {
+			over40.push(i);
+		}
+	} else {
+		for(var i=1; i < 40; i +=2) {
+		 	over40.push(i)
+		}
+
+	}
+	return over40;
+}
+
+console.log(oddNumbers(50));
+console.log(oddNumbers(20));
